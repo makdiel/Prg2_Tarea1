@@ -1,0 +1,21 @@
+{
+  "name": "prg2_tarea1",
+  "version": "1.0.0",
+  "description": "tarea #1 de node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:dev": "node index2.js",
+    "tercer-script": "npm run start:dev && node index2.js"
+  },
+  "keywords": [
+    "introduccion",
+    "pw2"
+  ],
+  "author": "mk",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
