@@ -91,7 +91,7 @@ console.log(mostrarlibros)
 
 console.log("For each publicaciones de libros")
 mostrarlibros.forEach(function(fila){
-    //console.log(fila.nombre, fila.apellido)
+    //console.log(fila.nombre, fila.descripcion)
    console.log( fila.publicarlibros())
 })
 
