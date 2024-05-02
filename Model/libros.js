@@ -9,9 +9,9 @@ class Libro {
     tipopublico
     fechapublicacion
     idgenero
-
+    puntaje
     //constructor
-    constructor(nombre, descripcion, reseña, nombreautor, apellidoautor, genero, tipopublico, fechapublicacion,idgenero) {
+    constructor(nombre, descripcion, reseña, nombreautor, apellidoautor, genero, tipopublico, fechapublicacion,idgenero,puntaje) {
         this.nombre = nombre
         this.descripcion = descripcion
         this.reseña = reseña
@@ -21,7 +21,8 @@ class Libro {
         this.tipopublico = tipopublico
         this.fechapublicacion = fechapublicacion
         this.idgenero = idgenero
-    }
+        this.puntaje = puntaje
+    }   
     //metodos
     get nombrecompleto() {
         return `${this.nombreautor} ${this.apellidoautor}`
@@ -32,7 +33,7 @@ class Libro {
     }
 
     publicarlibros(){
-        const mensajeNota = `El Libro,${this.nombre} cuyo autor: ${this.nombreCompleto} 
+        const mensajeNota = `El Libro,${this.nombre} cuyo autor: ${this.nombrecompleto} 
                             del genero ${this.genero} y para el tipo de publico: ${this.tipopublico}
                             sera publicado en la siguiente fecha : ${this.fechapublicacion}`
         console.log(mensajeNota)

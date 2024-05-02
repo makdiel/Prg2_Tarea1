@@ -87,7 +87,14 @@ mostrarlibros = mostrarlibros.filter(elemento => elemento.idgenero !== 1)
 console.log("En esta seccion solo muestro el nombre del libro despues del delete")
 //console.log(`autor:,  ${mostrarlibros.nombreautor}, Libro : ${mostrarlibros.nombre} `)
 
-console.log(mostrarlibros.nombre)
+console.log(mostrarlibros)
+
+console.log("For each publicaciones de libros")
+mostrarlibros.forEach(function(fila){
+    //console.log(fila.nombre, fila.apellido)
+   console.log( fila.publicarlibros())
+})
+
 
 
 
